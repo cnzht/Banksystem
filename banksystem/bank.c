@@ -26,6 +26,8 @@ void  main()
 			else
 			{
 				printf("%d次机会用完，用户名或者密码错误，退出系统！", i + 1);
+				getchar();
+				getchar();
 				exit(1);
 			}
 		}

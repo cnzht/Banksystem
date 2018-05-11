@@ -174,14 +174,14 @@ int  writeData()//写入文件D盘根目录bank.txt；
 	FILE *fp;
 	int i;
 
-	fp = fopen("D:\\Bank.txt","w");
+	fp = fopen("Bank.txt","w");
 	if (fp==NULL)
 	{
 		return 1;
 	}
 	for ( i = 0; i <=maxAccount; i++)
 	{
-		fprintf(fp, "%-6d%-10s%-10s%12.2f%2s\n",rs[i].accNumber,rs[i].accName,rs[i].accPWD,rs[i].balance,rs[i].flag);
+		fprintf(fp,"%-6d%-10s%-10s%12.2f%2s\n",rs[i].accNumber,rs[i].accName,rs[i].accPWD,rs[i].balance,rs[i].flag);
 	}
 	fclose(fp);
 	return 0;
@@ -190,7 +190,7 @@ int  writeData()//写入文件D盘根目录bank.txt；
 int  readData()//读取文件D盘根目录bank.txt；
 {
 	FILE *fp;
-	fp = fopen("D:\\Bank.txt", "r");
+	fp = fopen("Bank.txt","w+");
 	if (fp==NULL)
 	{
 		return 1;
@@ -198,7 +198,7 @@ int  readData()//读取文件D盘根目录bank.txt；
 	int i = 0,ef;
 	while (!feof(fp))
 	{
-		fscanf(fp, "%-6d%-10s%-10s%12.2f%2s\n",rs[i].accNumber,rs[i].accName, rs[i].accPWD, rs[i].balance, rs[i].flag);
+		fscanf(fp,"%-6d%-10s%-10s%12.2f%2s\n",rs[i].accNumber,rs[i].accName, rs[i].accPWD, rs[i].balance, rs[i].flag);
 		ef = fgetc(fp);
 		if (ef==EOF)
 		{

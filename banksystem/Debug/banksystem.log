@@ -1,4 +1,4 @@
-﻿生成启动时间为 2018/5/4 星期五 下午 3:27:15。
+﻿生成启动时间为 2018/5/7 星期一 下午 2:18:37。
      1>项目“F:\Github\banksystem\banksystem\banksystem.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt bankServe.c
@@ -12,4 +12,4 @@
 
 生成成功。
 
-已用时间 00:00:00.38
+已用时间 00:00:00.37
